@@ -1,25 +1,22 @@
-// const App = () => {
-//   return <h1>Hello World!</h1>;
-// };
-// export default App;
+import PropTypes from "prop-types";
 
-const newMessage = {
-  message: "Hello World",
-  title: "Brayan",
-};
-
-const getResult = (a, b) => a + b;
-
-export const HelloWorldApp = ({ title, subtitle }) => {
-  // console.log(props);
-
+export const HelloWorldApp = ({ title, subtitle, name }) => {
   return (
     <>
-      {/* <h1>{getResult(1, 10)}</h1> */}
-      {/* <code>{JSON.stringify(newMessage)}</code> */}
-      {/* <h1>Brayan</h1> */}
       <h1>{title}</h1>
       <p>{subtitle}</p>
+      <p>{name}</p>
     </>
   );
+};
+
+HelloWorldApp.propTypes = {
+  title: PropTypes.string,
+  subtitle: PropTypes.string,
+};
+
+HelloWorldApp.defaultProps = {
+  title: "There is no title.",
+  subtitle: "There is no subtitle",
+  name: "Brayan Garcia",
 };
