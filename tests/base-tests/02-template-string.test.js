@@ -5,6 +5,6 @@ describe('Tests on 02-template-string', () => {
     const name = 'Brayan';
     const message = getGreeting(name);
 
-    expect(message).toBe(`Hello ${name}!!!`);
+    expect(message).toBe(`Hello ${name}`);
   })
 })
