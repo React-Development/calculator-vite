@@ -11,12 +11,12 @@ export const HelloWorldApp = ({ title, subtitle, name }) => {
 };
 
 HelloWorldApp.propTypes = {
-  title: PropTypes.string,
+  title: PropTypes.string.isRequired,
   subtitle: PropTypes.string,
 };
 
 HelloWorldApp.defaultProps = {
-  title: "There is no title.",
+  // title: "There is no title.",
   subtitle: "There is no subtitle",
   name: "Brayan Garcia",
 };
