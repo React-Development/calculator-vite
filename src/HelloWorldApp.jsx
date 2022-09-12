@@ -1,9 +1,10 @@
+import React from "react";
 import PropTypes from "prop-types";
 
 export const HelloWorldApp = ({ title, subtitle, name }) => {
   return (
     <>
-      <h1>{title}</h1>
+      <h1> {title} </h1>
       <p>{subtitle}</p>
       <p>{name}</p>
     </>
