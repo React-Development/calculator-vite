@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`tests on HelloWorldApp must match with the snapshot 1`] = `
+<div>
+  <h1>
+     
+    Hello, I'm Goku
+     
+  </h1>
+  <p>
+    There is no subtitle
+  </p>
+  <p>
+    Brayan Garcia
+  </p>
+</div>
+`;
